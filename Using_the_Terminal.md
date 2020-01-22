@@ -39,7 +39,7 @@ Open the `.bashrc` initialization file - which is in your home directory - in yo
 
 `alias gohome="cd ~"`
 
-> **Pro tip:** Make sure there are no spaces before, or after, the equals sign in an alias.
+> **NOTE:** Make sure there are no spaces before, or after, the equals sign in an alias.
 
 Save the file, and reload your init file with the `source` command in the terminal.
 
