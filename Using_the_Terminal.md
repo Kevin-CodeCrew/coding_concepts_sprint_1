@@ -89,14 +89,6 @@ While executing commands is essential, most of the power (and complexity) of she
 
 Shells offer features geared specifically for interactive use rather than to augment the programming language. These interactive features include job control, command line editing, command history and aliases.
 
-## Videos to Watch
-
-1. [Bash Basics Part 1 of 8 | Access and Navigation](https://youtu.be/eH8Z9zeywq0?t=885)
-1. [Beginner's Guide to the Bash Terminal](https://www.youtube.com/watch?v=oxuRxtrO2Ag)
-1. [The Most Important Thing You'll Learn in the Command Line](https://www.youtube.com/watch?v=q7-aEspwwEI)
-1. Go through the CodeAcademy [command line course](https://www.codecademy.com/learn/learn-the-command-line).
-1. [Shell Scripting Tutorial](https://www.youtube.com/watch?v=hwrnmQumtPw)
-
 ## Practice
 
 1. Create the following directory structure in your `workspace` directory.
@@ -162,7 +154,15 @@ Add an alias for a `lls` (long listing) command to your `.bashrc`:
 1. Make sure you save the file.
 1. Reload `.bashrc` by running the following command: `source ~/.bashrc`and try your new `lls` command!
 
-Run the command by typing in `tree`.
+Run the command by typing in `lls`.
 
 > ADD AN IMAGE/ANIMATION
 
+
+## Additional Information
+
+1. [Bash Basics Part 1 of 8 | Access and Navigation](https://youtu.be/eH8Z9zeywq0?t=885)
+1. [Beginner's Guide to the Bash Terminal](https://www.youtube.com/watch?v=oxuRxtrO2Ag)
+1. [The Most Important Thing You'll Learn in the Command Line](https://www.youtube.com/watch?v=q7-aEspwwEI)
+1. Go through the CodeAcademy [command line course](https://www.codecademy.com/learn/learn-the-command-line).
+1. [Shell Scripting Tutorial](https://www.youtube.com/watch?v=hwrnmQumtPw)
