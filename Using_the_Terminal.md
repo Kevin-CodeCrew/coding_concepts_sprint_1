@@ -16,6 +16,7 @@ Becoming comfortable in the terminal improves your productivity as a software de
 1. `rm` - remove a single file
 1. `rm -rf` - remove a directory and all of its contents
 1. `source` - reload a file
+1. `man` - read the user manual for the specified command (use `Q` to exit)
 
 ## Advanced Linux commands & options
 
