@@ -5,7 +5,7 @@ Becoming comfortable with your terminal will make you a master of the computer.
 ## Basic Commands
 
 1. `cd` - change directory.
-1. `pwd` - print working directory; show where you are.
+1. `pwd` - present working directory; show where you are.
 1. `mkdir` - make directory.
 1. `ls` - list contents of a directory.
 1. `clear` - clear the view.
@@ -15,11 +15,13 @@ Becoming comfortable with your terminal will make you a master of the computer.
 1. `mv` - move files and directories.
 1. `rm` - remove a single file
 1. `rm -rf` - remove a directory and all of its contents
+1. `source` - reload a file
 
 ## Advanced commands & options
 
 1. Perform actions that affect the entire machine with `sudo`
-1. Quickly edit files with vim `vim filename`
+1. Use the `tab` key to automatically match filenames and complete commands
+1. Quickly edit files with nano `nano filename`
 1. Use `mkdir -p` to automatically make every directory in a new path
 1. Use wildcards when moving or copying files, e.g. `cp *.js ./`
 1. Use the `-r` option with `mv` or `cp` to recursively perform the action on all sub-directories
