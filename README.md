@@ -1,4 +1,4 @@
-# Coding Concepts Sprint 1 Materials - Terminal, IDE, Git Introduction, Browser Development Console
+# Coding Concepts Sprint 1 Materials - Terminal, IDE, Introduction to Git, Browser Development Console
 
 * Using the Terminal
 * IDE
