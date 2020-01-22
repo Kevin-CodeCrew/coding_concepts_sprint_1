@@ -1,8 +1,8 @@
 # Using the Terminal
 
-Becoming comfortable with your terminal will make you a master of the computer.
+Becoming comfortable in the terminal improves your productivity as a software developer.
 
-## Basic Commands
+## Basic Linux Commands
 
 1. `cd` - change directory.
 1. `pwd` - present working directory; show where you are.
@@ -17,7 +17,7 @@ Becoming comfortable with your terminal will make you a master of the computer.
 1. `rm -rf` - remove a directory and all of its contents
 1. `source` - reload a file
 
-## Advanced commands & options
+## Advanced Linux commands & options
 
 1. Perform actions that affect the entire machine with `sudo`
 1. Use the `tab` key to automatically match filenames and complete commands
