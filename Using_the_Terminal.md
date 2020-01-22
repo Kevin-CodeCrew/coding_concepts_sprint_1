@@ -135,6 +135,7 @@ help () {
     echo " - touch [filename]          Creates a new file"
     echo " - mkdir [directory]         Creates a new directory"
     echo " - mg [directory]            Creates a new directory and goes into it"
+    echo " - man [command]             Read the user manual for the specified command (use `Q` to exit)"
 }
 ```
 
@@ -144,18 +145,23 @@ Source your initialization file.
 
 Then you can use your help function.
 
-![help command example](./images/Bn6CSVqGxO.gif)
+> ADD AN IMAGE/ANIMATION
 
-## Tree Command
+## Customize List Command
 
-The `tree` command lists all the files and directories, recursively. It can be useful to see the file structure of your applications. 
+The `ls` command is used to list files. By default, the command displays a short listing of only filenames.
+> ADD AN IMAGE/ANIMATION
 
-Add an alias for the tree command to your `.bashrc`:
+It can be useful to see the details about each file as well as hidden files by using the '-la' command options. 
+
+Add an alias for a `lls` (long listing) command to your `.bashrc`:
 
 1. Type in `code ~/.bashrc` to open your bash file. 
-1. Add in `alias tree="cmd //c tree/f"` to the file.
+1. Add in `alias lls='ls -la` to the file.
 1. Make sure you save the file.
-1. Reload `.bashrc` by running the following command: `source ~/.bashrc`.
+1. Reload `.bashrc` by running the following command: `source ~/.bashrc`and try your new `lls` command!
 
 Run the command by typing in `tree`.
+
+> ADD AN IMAGE/ANIMATION
 
