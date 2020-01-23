@@ -104,6 +104,8 @@ When you `add` and `commit` changes to your source code, it is first updated in 
 ## git pull
 To ensure your local copy is current with the remote repo use the `pull` command. The `pull` command will fetch any changes you do not have locally.
 
+![Git Pull](./img/git_pull.png)
+
 When working in a team environment where several developers may be working from the same repo it is vital that you keep your local repo current by using `pull`. When pulling you may encounter merge conflicts if you and another developer modified the same files.
 
 Resolving merge conflicts is discussed further in an upcoming module.
