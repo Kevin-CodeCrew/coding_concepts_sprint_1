@@ -115,4 +115,5 @@ When working in a team environment where several developers may be working from 
 Resolving merge conflicts is discussed further in an upcoming module.
 
 # Additional Information
++ [Using Markdown in your Github README files](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#images)
 + [git - The Simple Guide](http://rogerdudler.github.io/git-guide/)
