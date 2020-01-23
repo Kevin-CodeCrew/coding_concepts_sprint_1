@@ -20,29 +20,37 @@ Regardless of the programming language. When an error occurs, it will return a s
 
 Sometimes a stack trace looks scary, but just start at the bottom of the output and work your way up. Some of the code referenced might not be code you wrote and instead be code in the tool or framework you are using. 
 
-Look for clues in the stack trace output that give you a better idea of where therror occurred and why. Most stack traces will include actual line numbers from the source code file where the error was encountered. Watch out for them and start your debugging search there.
+Modern browser developer tools will generally include a hyperlink as part of the stack trace output so that you can click and jump right to the line in the source code that is in error.
+
+> Not all stack traces will be displayed in the browser console. Some will be displayed in the terminal where you are running your application.
+
+Look for other clues in the stack trace output that give you a better idea of where the error occurred and why. Most stack traces will include actual line numbers from the source code file where the error was encountered. Watch out for them and start your debugging search there.
 
 ### Network Tab
 Internet applications consists of several requests/responses. Even though you are viewing a single web page, far more than one network request is being made to retrieve all the code, images, and other linked items via a network protocol called HTTP (HyperText Transport Protocol). Each HTTP request returns a status code, along with the requested data (when request successful). 
 
 [HTTP Status Codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes)
 
+![The Development Tools Network Tab](./img/net_console.gif)
+
 ## Debugging Code in the Browser
 When your web page doesn't display as expected in the browser, the first thing to do is popup the developer tools and check the `console` tab.
 
 The `console` tab will display any exceptions generated while attempting to render the page. The tool is especially when JavaScript is being used. Should an exception (error) occur in your code, the console will display what is called a `stack trace`. A stack trace shows you the last lines of code that were executed leading up to the error. 
 
+![Sample Linked Stack Trace for JavaScript](./img/stack_trace.gif)
 
-### console.log
+### Application Logging
+The good old goto is just logging messages from your code. This means using whatever console logging function is available for your chosen platform. 
 
-### debugger
+For JavaScript this is done by using the `console.log` method. You can log any message you want as well as the values of variables at that point in the code. The messages logged can be as simple as `At step 1` or similar. The key is never assume that the variables/values needed at some point in the code are what you assume them to be. Never hurts to log the values to the console to confirm your assumption. 
 
-### Breakpoints
+> NOTE: Remember to remove all your console debug logs prior to deploying your code to a production environment
 
-## Debugging in Visual Studio Code
+All languages provide logging frameworks that provide functionality far beyond your basic `console.log` type facilities. They include filtering of log messages by severity such as DEBUG, INFO, WARNING, and ERROR. Even when not debugging, logging is critical to creating the solutions that you deploy and will be covered in detail during class.
 
-## Exception Handling
+> NOTE: You can never log enough :-P
 
-### try/catch
+
 
 
