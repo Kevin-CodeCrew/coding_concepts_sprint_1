@@ -38,6 +38,10 @@ When your web page doesn't display as expected in the browser, the first thing t
 
 The `console` tab will display any exceptions generated while attempting to render the page. The tool is especially when JavaScript is being used. Should an exception (error) occur in your code, the console will display what is called a `stack trace`. A stack trace shows you the last lines of code that were executed leading up to the error. 
 
+In modern browsers, the line of JavaScript that generated the exception is highlighted. You can click on this line in the stack trace to see the actual line in your source code.
+
+> NOTE: You cannot edit the code from here, but you can use the provided information to jump back into your IDE and make any corrections needed
+
 ![Sample Linked Stack Trace for JavaScript](./img/stack_trace.gif)
 
 ### Application Logging
