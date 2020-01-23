@@ -37,13 +37,13 @@ Type `git status` to see the status of all files in your new repository.
 
 ### git status
 The `status` git command will show you any untracked files as well as those that are tracked, but have been modified in some way. Use this command OFTEN to ensure that any and all local changes get committed and ultimately get pushed to your remote repositories.
-[Git init and status Command Output](./img/git_status.gif)
+![Git init and status Command Output](./img/git_status.gif)
 
 ### git add
 Next, Tell git that you want to start tracking those files with `git add .` command. The period means "add all untracked files from this directory, and any sub-directories". But be careful! Using the `add .` command means you're adding all untracked files. 
 
 Type `git status` again and notice the new messages that you now have 2 new files that are ready to commit.
-[Git Status after Additions](./img/git_status_2.png)
+![Git Status after Additions](./img/git_status_2.png)
 
 ### git restore
 If you ever accidentally add files to your repository that were not intended, you can use the `reset` command to back out the additions prior to commit by typing `git reset`.
@@ -61,14 +61,14 @@ You may specify the commit message on the command line for convenience using the
 Git maintains a log of all changes made to files within a git repository. Github, discussed below, will show a nice color-coded diff (differences) in the browser, however you can always get a simple version of a diff on your local machine.
 
 The `diff` command shows any differences in your local files and the ones committed to your repository. Text removed from your source code is marked in the color red and preceeded by a `-` sign, while additions will show up in green and preceeded by a `+` sign.
-[Git Diff](./img/git_diff.png)
+![Git Diff](./img/git_diff.png)
 
 ### git log
 Github allows easy access to all of the commit messages made while commiting additions/changes to source code, however you can access this log information locally as well by using the `log` git command.
 
 `git log`
 
-[Git log Command Output](./img/git_log.png)
+![Git log Command Output](./img/git_log.png)
 # Using Github
 
 ## Creating an Account
