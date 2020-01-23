@@ -45,7 +45,7 @@ Next, Tell git that you want to start tracking those files with `git add .` comm
 Type `git status` again and notice the new messages that you now have 2 new files that are ready to commit.
 ![Git Status after Additions](./img/git_status_2.png)
 
-### git restore
+### git reset
 If you ever accidentally add files to your repository that were not intended, you can use the `reset` command to back out the additions prior to commit by typing `git reset`.
 
 ### git commit
@@ -70,18 +70,43 @@ Github allows easy access to all of the commit messages made while commiting add
 
 ![Git log Command Output](./img/git_log.png)
 # Using Github
+Github is a service that hosts remote git repositories. New and similar options are emerging, but we will use extensively in class.
 
 ## Creating an Account
-> ADD AN IMAGE/ANIMATION
+Go to `github.com` to create an account. Once an account is created, a developer profile page will be created that let's you access your remote repositories as will as view your activity.
+
+![Sample Github Profile Page](./img/github_profile.png)
 
 ## Creating a Github Repository
+Select `Repositories` in Github to list your current repositories. Select `New` to create a new remote repository.
+
+When creating the remote repo first (i.e. you do not have source code files in an existing local repo), you will generally always select to add a README file. The README is a file you use to describe the project in the remote repository.
+
+If you already have a project and source code locally, select NOT to create a README.
+
+![Create Github Remote Repository](./img/git_create_repo.png)
 
 ## Connecting a Local Repository to a Remote Github Repository
-> ADD AN IMAGE/ANIMATION
+Sometimes you will start coding on your local machine first in a local git repo. Existing projects and files can be added to a new remote Github repo. When creating a Github repo to house an existing local project, be sure you don't select to create a README at creation time. Once the remote Github repo has been created without a README, it will provide handly instructions for adding existing local code. Just copy and paste the commands displayed into your terminal one at a time and run them.
+
+![Adding an Existing Project to a Remote Github Repo](./img/git_steps_to_add_existing_project.png)
+
+## git clone
+If you are starting your work locally from an existing Github repo, you must first `clone` it. The `clone` command requires a git URL. You can find the needed URL by simply going to the repo in Github, click the `Clone or Download1 button, and copy the URL from there.
+
+`git clone https://github.com/Kevin-CodeCrew/coding_concepts_sprint_1.git`
 
 ## git push
+When you `add` and `commit` changes to your source code, it is first updated in your local repo. In order for the changes to be reflected in your remote repository you must `push` them.
+
+`git push`
 
 ## git pull
+To ensure your local copy is current with the remote repo use the `pull` command. The `pull` command will fetch any changes you do not have locally.
+
+When working in a team environment where several developers may be working from the same repo it is vital that you keep your local repo current by using `pull`. When pulling you may encounter merge conflicts if you and another developer modified the same files.
+
+Resolving merge conflicts is discussed further in an upcoming module.
 
 # Additional Information
 + [git - The Simple Guide](http://rogerdudler.github.io/git-guide/)
