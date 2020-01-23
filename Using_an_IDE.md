@@ -35,7 +35,8 @@ Add the following HTML to the new file then save it
 ```
 
 Notice how the code remains monocolored. It is treated as plain old text because it does not recognize that it is HTML
-> **Insert screenshot**
+
+![Unformatted Unknown Content](./img/2020-01-22_061526.png)
 
 Use the `save as...` command from the `File` menu to save the file using the name `helloworld.html`
 
@@ -44,4 +45,5 @@ Notice how the HTML tags are now in color. This is known as `syntax highlighting
 Now that the IDE can recognize that it is an HTML file it will make other features available. 
 
 Right click in the editor window and select `Format Document` and you will see that the IDE will format it as HTML for easier reading.
-> **Insert screenshot**
+
+![Formatted HTML Content](./img/2020-01-22_061553.png)
