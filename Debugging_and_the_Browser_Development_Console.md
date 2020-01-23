@@ -1,4 +1,4 @@
-# Debugging and the Browser Development Console
+# Debugging and the Browser Developer Console
 Debugging your code is one of the most crucial skills as a developer. Several tools are at your disposal to assist you in this effort. 
 
 ## Browser Developer Console
