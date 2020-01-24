@@ -41,7 +41,7 @@ The `status` git command will show you any untracked files as well as those that
 ![Git init and status Command Output](./img/git_status.gif)
 
 ### git add
-Next, Tell git that you want to start tracking those files with `git add .` command. The period means "add all untracked files from this directory, and any sub-directories". But be careful! Using the `add .` command means you're adding all untracked files. 
+Next, Tell git that you want to start tracking those files with `git add -A` command. The `-A` means "add all untracked files from this directory, and any sub-directories". But be careful! Using the `add -A` command means you're adding all untracked files. You can use a `.gitignore` file to exclude certain file types. `.gitignore` is discussed later in this module.
 
 Type `git status` again and notice the new messages that you now have 2 new files that are ready to commit.
 
@@ -113,6 +113,15 @@ To ensure your local copy is current with the remote repo use the `pull` command
 When working in a team environment where several developers may be working from the same repo it is vital that you keep your local repo current by using `pull`. When pulling you may encounter merge conflicts if you and another developer modified the same files.
 
 Resolving merge conflicts is discussed further in an upcoming module.
+
+## .gitignore File
+The `.gitignore` file is used to exclude certain files from being tracked in your repository. The general rule when it comes to software development and source code control is that only the files needed to re-constitute the software solution should be checked in and tracked, and subsequently deployed as part of your **production** deployment to your server(s). 
+
+Files like databases, executables (.exe, .bin, etc.) normally should not be tracked as they are generated from your source code. Databases in particular should normally not be checked in as each time you update your application on your production server, you could end up wiping out all your data (such as wiki entries) and replacing it with records created while developing the solution.
+
+You can create as many `.gitignore` files as are needed. The `.gitignore` file will apply to any files in the current subdirectory and all subdirectories where you run git commands from. 
+
+There are several convenient sources to get pre-built `.gitignore` files for common project types (django, node.js, etc.) but you may create your own using your favorite text editor. In the `.gitignore` file simply add the directory names and file names to ignore. Use wildcards to exclude multiple files of a given type (e.g. *.exe). See the Additional Information section for links to pre-built `.gitignore` files.
 
 # Additional Information
 + [Using Markdown in your Github README files](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#images)
