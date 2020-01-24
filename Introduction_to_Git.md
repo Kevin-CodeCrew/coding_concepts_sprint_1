@@ -7,7 +7,7 @@ These systems allow the developer to see exactly what changes were made to sourc
 While there are many different version control solutions, Git is presently the most popular and what we will be using in class, but on the job you may encounter similar solutions such as [Subversion](https://subversion.apache.org/) but the general concepts of version control, much like programming in general, apply across all of the different version control systems (VCS).
 
 # Git
-Git is a distributed version control system for tracking the history of your code. It is called a `distributed` because it supports both `local` (on the developer's machine) as well as `remote` repositories stored on servers out on the internet/network. A popular remote repository service and one that we will use in class is `Github` (more about that later).
+Git is a *distributed* version control system for tracking the history of your code. It is called a `distributed` because it supports both `local` (on the developer's machine) as well as `remote` repositories stored on servers out on the internet/network. A popular remote repository service and one that we will use in class is `Github` (more about that later).
 
 # Practice
 ## Creating a Git Repo Locally
