@@ -55,6 +55,40 @@ All languages provide logging frameworks that provide functionality far beyond y
 
 > NOTE: You can never log enough :-P
 
+## try/catch/finally Exception Handling
+Every programming language has some version of `try/catch/finally` for dealing with errors in your application. While the syntax across languages may differ, the concept is the same. With exception handling you wrap one or more lines of programming instructions you want to `try` to execute so that should an unexpected error occur while executing the instruction(s) you can `catch` it in your own code and handle it gracefully. By *handling it gracefully* we mean that your solution doesn't completely shutdown, but instead displays/logs appropriate error messages and/or create any resources that may have been missing that resulted in the exception (e.g. not finding a file that your program expected to be available).
 
+In programming languages that support `finally` you are given the opportunity to *optionally* designate programming instructions that should be executed *regardless* of whether an exception occurs or not in the code you are *trying* to execute. The popular scenario is connecting to and using a database. To use a database your code has to open up a network connection to the database management system before it can access any data. Each database connection is one less connection that is made available to other programs, so you *always* want to close and free up the database connection when you are done. Regardless of if an exception occurred or not. The code to close an open database connection(s) would be placed in the `finally` block to *guarantee* that the connection is closed and made available to other programs.
 
+The typical try/catch/finally syntax, regardless of the language, will resemble the following, with some slight syntax changes depending on the programming language.
 
+```
+try {
+  try_statements
+}
+[catch (exception_var_1 if condition_1) { // non-standard
+  catch_statements_1
+}]
+...
+[catch (exception_var_2) {
+  catch_statements_2
+}]
+[finally {
+  finally_statements
+}]
+```
+
+`try_statements`
+The statements to be executed.
+`catch_statements_1, catch_statements_2`
+Statements that are executed if an exception is thrown in the try-block.
+`exception_var_1, exception_var_2`
+An identifier to hold an exception object for the associated catch-block.
+`condition_1`
+A conditional expression.
+`finally_statements`
+Statements that are executed after the try statement completes. These statements execute regardless of whether an exception was thrown or caught.
+
+It is **always** better to handle and exception, and give the user a message, or other valuable feedback rather than your program crashing horribly and kicking the user out.
+
+> **NOTE**: Make sure you are always logging any exceptions that occur. The information is key to you discovering an issue and fixing your code!
