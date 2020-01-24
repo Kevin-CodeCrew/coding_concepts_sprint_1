@@ -121,7 +121,7 @@ Files like databases, executables (.exe, .bin, etc.) normally should not be trac
 
 You can create as many `.gitignore` files as are needed. The `.gitignore` file will apply to any files in the current subdirectory and all subdirectories where you run git commands from. 
 
-There are several convenient sources to get pre-built `.gitignore` files for common project types (django, node.js, etc.) but you may create your own using your favorite text editor. In the `.gitignore` file simply add the directory names and file names to ignore. Use wildcards to exclude multiple files of a given type (e.g. *.exe). See the Additional Information section for links to pre-built `.gitignore` files.
+There are several convenient sources to get pre-built `.gitignore` files for common project types (django, node.js, etc.) but you may create your own using your favorite text editor. In the `.gitignore` file simply add the directory names and file names to ignore. Use wildcards to exclude multiple files of a given type (e.g. *.exe). See the [Additional Information](./Introduction_to_Git.md#additional-information) section for links to pre-built `.gitignore` files.
 
 # Additional Information
 + [Using Markdown in your Github README files](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#images)
