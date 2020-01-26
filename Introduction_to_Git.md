@@ -95,6 +95,7 @@ Sometimes you will start coding on your local machine first in a local git repo.
 
 ![Adding an Existing Project to a Remote Github Repo](./img/git_steps_to_add_existing_project.png)
 
+# Additional Git Commands
 ## git clone
 If you are starting your work locally from an existing Github repo, you must first `clone` it. The `clone` command requires a git URL. You can find the needed URL by simply going to the repo in Github, click the `Clone or Download1 button, and copy the URL from there.
 
@@ -123,8 +124,8 @@ You can create as many `.gitignore` files as are needed. The `.gitignore` file w
 
 There are several convenient sources to get pre-built `.gitignore` files for common project types (django, node.js, etc.) but you may create your own using your favorite text editor. In the `.gitignore` file simply add the directory names and file names to ignore. Use wildcards to exclude multiple files of a given type (e.g. *.exe). See the [Additional Information](./Introduction_to_Git.md#additional-information) section for links to pre-built `.gitignore` files.
 
-# Practice
-> ADD PRACTICE LINKS
+# Classwork
+> ADD CLASSWORK LINKS
 
 # Additional Information
 + [Ready made `.gitignore` files for a variety of programming languages can be found here](https://github.com/github/gitignore)
