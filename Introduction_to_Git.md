@@ -45,7 +45,7 @@ Type `git status` to see the status of all files in your new repository.
 ### git status
 The `status` git command will show you any untracked files as well as those that are tracked, but have been modified in some way. Use this command OFTEN to ensure that any and all local changes get committed and ultimately get pushed to your remote repositories.
 
-![Git init and status Command Output](./img/git_status.gif)
+![Git status Command Output](./img/git_status.gif)
 
 ### git add
 Next, Tell git that you want to start tracking those files with `git add -A` command. The `-A` means "add all untracked files from this directory, and any sub-directories". But be careful! Using the `add -A` command means you're adding all untracked files. You can use a `.gitignore` file to exclude certain file types. `.gitignore` is discussed later in this module.
