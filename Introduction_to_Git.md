@@ -13,11 +13,11 @@ Git is a *distributed* version control system for tracking the history of your c
 
 A popular remote repository service and one that we will use in class is `Github` (more about that later).
 
-# Practice
+## Git Commands
 ### git init
 The `git init` command is used when you want to create a new git repository on your local machine (not remote). When this command is executed, the `git` program will create the files/directories needed to start tracking file changes.
 
-## Creating a Git Repo Locally
+#### git init Create Local Repo
 1. Create a directory to store your application's code.
     ```sh
     cd
@@ -54,9 +54,6 @@ Type `git status` again and notice the new messages that you now have 2 new file
 
 ![Git Status after Additions](./img/git_status_2.png)
 
-### git reset
-If you ever accidentally add files to your repository that were not intended, you can use the `reset` command to back out the additions prior to commit by typing `git reset`.
-
 ### git commit
 When you are done making additions/changes, you must commit your changes for them to be reflected in your repo. 
 
@@ -65,6 +62,10 @@ You can commit individual files by providing a filename or may commit all added 
 You may specify the commit message on the command line for convenience using the `-m` option. If you omit this option, the default text editor for the current computer will launch so you can type the commit message. In general, always use the `-m` option.
 
 `git commit -m "Updated nested loops in customer shipment history module so that related shipment information is also populated."`
+
+
+### git reset
+If you ever accidentally add files to your repository that were not intended, you can use the `reset` command to back out the additions prior to commit by typing `git reset`.
 
 ### git diff
 Git maintains a log of all changes made to files within a git repository. Github, discussed below, will show a nice color-coded diff (differences) in the browser, however you can always get a simple version of a diff on your local machine.
