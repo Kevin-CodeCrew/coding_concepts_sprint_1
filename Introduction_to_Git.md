@@ -7,9 +7,16 @@ These systems allow the developer to see exactly what changes were made to sourc
 While there are many different version control solutions, Git is presently the most popular and what we will be using in class, but on the job you may encounter similar solutions such as [Subversion](https://subversion.apache.org/) but the general concepts of version control, much like programming in general, apply across all of the different version control systems (VCS).
 
 # Git
-Git is a *distributed* version control system for tracking the history of your code. It is called a `distributed` because it supports both `local` (on the developer's machine) as well as `remote` repositories stored on servers out on the internet/network. A popular remote repository service and one that we will use in class is `Github` (more about that later).
+Git is a *distributed* version control system for tracking the history of your code. It is called a `distributed` because it supports both `local` (on the developer's machine) as well as `remote` repositories stored on servers out on the internet/network. 
+
+> A repository is a named location that stores a list of all the files you are tracking and a history of any changes you make
+
+A popular remote repository service and one that we will use in class is `Github` (more about that later).
 
 # Practice
+### git init
+The `git init` command is used when you want to create a new git repository on your local machine (not remote). When this command is executed, the `git` program will create the files/directories needed to start tracking file changes.
+
 ## Creating a Git Repo Locally
 1. Create a directory to store your application's code.
     ```sh
@@ -20,12 +27,12 @@ Git is a *distributed* version control system for tracking the history of your c
 1. Type in the `git init` command
 1. You now have a local git repository
 
-## Setting the Username and Email for Git
+### git config
 The first time that you commit anything via Github it will require you to specify the user name and the email address associated with your Github account. You can set and save these settings either for *just* the current repository directory you are in or for all repositories you will work on from your machine. The `-global` option is used to specify that the credentials should be used for all repositories. 
 
 If you intend on interacting with other Github repositories using a different Github user account, then set credentials independently, otherwise, the `-global` option should be used so that you aren't repeatedly prompted for this information.
 
-[Setting the User and email for Git](./img/git-config.png)
+![Setting the User and email for Git](./img/git-config.png)
 
 ## Commiting Changes
 1. Create an HTML file with `touch index.html`
