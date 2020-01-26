@@ -35,6 +35,15 @@ If you intend on interacting with other Github repositories using a different Gi
 ![Setting the User and email for Git](./img/git-config.png)
 
 ## Commiting Changes
+Any changes you make to your files aren't tracked by `git` until you *commit* the changes to the repository. As you make changes to your programs commit often so you don't lose your changes. 
+
+> ALWAYS remember to commit your changes each time you reach a development milestone so that you can rollback to them should you break your code!
+
+
+### git status
+The `status` git command will show you any untracked files as well as those that are tracked, but have been modified in some way. Use this command OFTEN to ensure that any and all local changes get committed and ultimately get pushed to your remote repositories.
+
+#### Practice
 1. Create an HTML file with `touch index.html`
 1. Create a CSS file with `styles.css`
 
@@ -42,13 +51,13 @@ Since git tracks all changes - unless you tell it to ignore some files, which we
 
 Type `git status` to see the status of all files in your new repository.
 
-### git status
-The `status` git command will show you any untracked files as well as those that are tracked, but have been modified in some way. Use this command OFTEN to ensure that any and all local changes get committed and ultimately get pushed to your remote repositories.
-
 ![Git status Command Output](./img/git_status.gif)
 
 ### git add
-Next, Tell git that you want to start tracking those files with `git add -A` command. The `-A` means "add all untracked files from this directory, and any sub-directories". But be careful! Using the `add -A` command means you're adding all untracked files. You can use a `.gitignore` file to exclude certain file types. `.gitignore` is discussed later in this module.
+The 'add' commands is used to stage any new or modified files prior to *committing* your changes. You can stage individual files by passing in their file names, or add all new/modified files using the `-A` option. The `-A` means "add all untracked files from this directory, and any sub-directories". But be careful! Using the `add -A` command means you're adding all untracked files. You can use a `.gitignore` file to exclude certain file types. `.gitignore` is discussed later in this module.
+
+#### Practice
+Tell git that you want to start tracking the files added earlier with `git add -A` command. 
 
 Type `git status` again and notice the new messages that you now have 2 new files that are ready to commit.
 
@@ -61,27 +70,28 @@ You can commit individual files by providing a filename or may commit all added 
 
 You may specify the commit message on the command line for convenience using the `-m` option. If you omit this option, the default text editor for the current computer will launch so you can type the commit message. In general, always use the `-m` option.
 
-`git commit -m "Updated nested loops in customer shipment history module so that related shipment information is also populated."`
+#### Practice
+Commit your changes with `commit`
 
+`git commit -m "Created 2 new files for git practice."`
 
-### git reset
+### Other Handy Git Commands
+#### git reset
 If you ever accidentally add files to your repository that were not intended, you can use the `reset` command to back out the additions prior to commit by typing `git reset`.
 
-### git diff
+#### git diff
 Git maintains a log of all changes made to files within a git repository. Github, discussed below, will show a nice color-coded diff (differences) in the browser, however you can always get a simple version of a diff on your local machine.
 
 The `diff` command shows any differences in your local files and the ones committed to your repository. Text removed from your source code is marked in the color red and preceeded by a `-` sign, while additions will show up in green and preceeded by a `+` sign.
 
 ![Git Diff](./img/git_diff.png)
 
-### git log
+#### git log
 Github allows easy access to all of the commit messages made while commiting additions/changes to source code, however you can access this log information locally as well by using the `log` git command.
-
-`git log`
 
 ![Git log Command Output](./img/git_log.png)
 
-# Using Github
+# Remote Repositories with Github
 Github is a service that hosts remote git repositories. New and similar options are emerging, but we will use extensively in class.
 
 ## Creating an Account
@@ -103,7 +113,7 @@ Sometimes you will start coding on your local machine first in a local git repo.
 
 ![Adding an Existing Project to a Remote Github Repo](./img/git_steps_to_add_existing_project.png)
 
-# Additional Git Commands
+# Remote Git Repository Commands
 ## git clone
 If you are starting your work locally from an existing Github repo, you must first `clone` it. The `clone` command requires a git URL. You can find the needed URL by simply going to the repo in Github, click the `Clone or Download1 button, and copy the URL from there.
 
@@ -132,7 +142,8 @@ You can create as many `.gitignore` files as are needed. The `.gitignore` file w
 
 There are several convenient sources to get pre-built `.gitignore` files for common project types (django, node.js, etc.) but you may create your own using your favorite text editor. In the `.gitignore` file simply add the directory names and file names to ignore. Use wildcards to exclude multiple files of a given type (e.g. *.exe). See the [Additional Information](./Introduction_to_Git.md#additional-information) section for links to pre-built `.gitignore` files.
 
-# Classwork
+# Assignments
+
 
 
 # Additional Information
