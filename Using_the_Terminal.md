@@ -4,15 +4,15 @@ Becoming comfortable in the terminal improves your productivity as a software de
 
 ## Basic Linux Commands
 
-1. `cd` - change directory.
-1. `pwd` - present working directory; show where you are.
-1. `mkdir` - make directory.
-1. `ls` - list contents of a directory.
-1. `clear` - clear the view.
-1. `touch` - create file.
-1. `cat` - read the contents of a file.
-1. `cp` - copy files and directories.
-1. `mv` - move files and directories.
+1. `cd` - change directory
+1. `pwd` - present working directory; show where you are
+1. `mkdir` - make directory
+1. `ls` - list contents of a directory
+1. `clear` - clear the view
+1. `touch` - create file/update existing file's timestamp
+1. `cat` - read the contents of a file
+1. `cp` - copy files and directories
+1. `mv` - move files and directories
 1. `rm` - remove a single file
 1. `rm -rf` - remove a directory and all of its contents
 1. `source` - reload a file
