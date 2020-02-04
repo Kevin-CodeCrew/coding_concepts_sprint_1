@@ -39,7 +39,6 @@ Any changes you make to your files aren't tracked by `git` until you *commit* th
 
 > ALWAYS remember to commit your changes each time you reach a development milestone so that you can rollback to them should you break your code!
 
-
 ### git status
 The `status` git command will show you any untracked files as well as those that are tracked, but have been modified in some way. Use this command OFTEN to ensure that any and all local changes get committed and ultimately get pushed to your remote repositories.
 
@@ -142,8 +141,17 @@ You can create as many `.gitignore` files as are needed. The `.gitignore` file w
 
 There are several convenient sources to get pre-built `.gitignore` files for common project types (django, node.js, etc.) but you may create your own using your favorite text editor. In the `.gitignore` file simply add the directory names and file names to ignore. Use wildcards to exclude multiple files of a given type (e.g. *.exe). See the [Additional Information](./Introduction_to_Git.md#additional-information) section for links to pre-built `.gitignore` files.
 
-# Assignments
+### Practice
+1. In your `git_intro` directory, create a new file
+```
+touch dont_track_this_file.txt
+git status
+```
+1. Now edit your `.gitignore` file, add `dont_track_this_file.txt', the save the file
+1. Now do a `git add` and notice your new file is ignored and not on the list.
 
+# Assignments
+> ADD A NEW ASSIGNMENT WITH BASIC GIT
 
 
 # Additional Information
