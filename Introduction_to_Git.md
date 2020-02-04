@@ -141,13 +141,17 @@ You can create as many `.gitignore` files as are needed. The `.gitignore` file w
 
 There are several convenient sources to get pre-built `.gitignore` files for common project types (django, node.js, etc.) but you may create your own using your favorite text editor. In the `.gitignore` file simply add the directory names and file names to ignore. Use wildcards to exclude multiple files of a given type (e.g. *.exe). See the [Additional Information](./Introduction_to_Git.md#additional-information) section for links to pre-built `.gitignore` files.
 
+## Storing Github Credentials
+By default Github will make you put in your Github credentials each time you try to push to a remote repository. If you are pushing frequently from the terminal you may want to configure your git installation to cache (temporairly remember) your credentials so it won't prompt you each time. You can specify how long to remember your credentials after they are entered once using the ```timeout``` option. Set the cache property in your git config by running the following command in terminal.
+`git config --global credential.helper cache --timeout=3600`
+
 ### Practice
 1. In your `git_intro` directory, create a new file
 ```
 touch dont_track_this_file.txt
 git status
 ```
-1. Now edit your `.gitignore` file, add `dont_track_this_file.txt', the save the file
+1. Now edit your `.gitignore` file, add `dont_track_this_file.txt`, the save the file
 1. Now do a `git add` and notice your new file is ignored and not on the list.
 
 # Assignments
