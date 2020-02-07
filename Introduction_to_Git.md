@@ -143,7 +143,8 @@ There are several convenient sources to get pre-built `.gitignore` files for com
 
 ## Storing Github Credentials
 By default Github will make you put in your Github credentials each time you try to push to a remote repository. If you are pushing frequently from the terminal you may want to configure your git installation to cache (temporairly remember) your credentials so it won't prompt you each time. You can specify how long to remember your credentials after they are entered once using the ```timeout``` option. Set the cache property in your git config by running the following command in terminal.
-`git config --global credential.helper cache --timeout=3600`
+`
+git config --global credential.helper cache --timeout=3600`
 
 ### Practice
 1. In your `git_intro` directory, create a new file
