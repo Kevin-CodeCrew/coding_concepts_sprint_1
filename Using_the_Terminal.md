@@ -18,6 +18,21 @@ Becoming comfortable in the terminal improves your productivity as a software de
 1. `source` - reload a file
 1. `man` - read the user manual for the specified command (use `Q` to exit)
 
+## Basic Windows Commands
+
+1. `cd` - change directory
+1. `chdir` -  current directory location : show where you are
+1. `md` - make directory
+1. `dir` - list contents of a directory
+1. `cls` - clear the view
+1. `type` - read the contents of a file
+1. `copy` - copy files and directories
+1. `move` - move files and directories
+1. `del` - remove a single file
+1. `rmdir` - remove a directory and all of its contents
+1. `source` - reload a file
+1. `command /?` - read the user manual for the specified command (use `Q` to exit)
+
 ## Advanced Linux commands & options
 
 1. Perform actions that affect the entire machine with `sudo`
